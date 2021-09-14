@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Neon Password Gen.</title>
-        <link href="./password-gen-neon-edit.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <h1>Neon Password Generator</h1>
-            </header>
-            <div class="card">
-                <div class="card-header">
-                    <h2>Generate a Password</h2>
-                </div>
-                <div class="card-body">
-                    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-                    <div class="length-slider" data-min="8" data-max="128">
-                        <div class="length-title" data-length="0">Length:</div>
-                        <input id="slider" type="range" min="8" max="128" value="8">
-                    </div>
-                </div>
-                <div class="pw-preference">
-                    <span class="pw-title">Password Preference</span>
-                    <div class="pw-rules">
-                        <input id="uppercase" type="checkbox"></input>
-                            <label for="uppercase">Uppercase?</label>
-                        <input id="lowercase" type="checkbox"></input>
-                            <label for="lowercase">Lowercase?</label>
-                        <input id="numbers" type="checkbox"></input>
-                            <label id="numbers">Numbers?</label>
-                        <input id="symbols" type="checkbox"></input>
-                            <label id="symbols">Symbols?</label>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <button id="generate" class="btn">Generate Password</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Password Generator</title>
+    <link href="./password-gen-neon-edit.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+                <div class="length-slider" data-min="8" data-max="128">
+                    <div class="length-title" data-length="0">Length:</div>
+                    <input id="slider" type="range" min="8" max="128" value="25"/>
                 </div>
             </div>
+            <div class="pw-preference">
+                <span class="pw-title">Password Preference</span>
+                <div class="pw-rules">
+                    <input id="uppercase" type="checkbox"></input>
+                        <label for="uppercase">Uppercase?</label>
+                    <input id="lowercase" type="checkbox"></input>
+                        <label for="lowercase">Lowercase?</label>
+                    <input id="numbers" type="checkbox"></input>
+                        <label for="numbers">Numbers?</label> 
+                    <input id="symbols" type="checkbox"></input>
+                        <label for="symbols">Symbols?</label>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="generate" class="btn">Generate Password</button>
+            </div>
         </div>
-        <script src="./script.js"></script>
-    </body>
+    </div>
+<script src="./script.js"></script>
+</body>       
 </html>
